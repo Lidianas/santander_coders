@@ -101,6 +101,49 @@ public class Main {
         System.out.println("---------------------------------");
         System.out.println("Remembering loops");
 
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+                System.out.println("i is "+i+" and j is "+j);
+            }
+        }
 
+        System.out.println("---------------------------------");
+        System.out.println("Handling arrays");
+
+        int[] numbers = new int[5];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        numbers[3] = 4;
+        numbers[4] = 5;
+        float medium = 0;
+
+        String[] letters = {"A", "B", "C", "D", "E"};
+
+        for (int i=0; i<numbers.length; i++){
+            System.out.println("In position "+i+" of the array we have the following value "+numbers[i]);
+            medium += (float) numbers[i];
+        }
+
+        System.out.println("The medium of the value in the array is "+medium/numbers.length);
+        System.out.println();
+        for (int i=0; i<letters.length; i++){
+            System.out.println("In position "+i+" of the array we have the following value "+letters[i]);
+        }
+
+        String anotherAnotherName = "Lidiana";
+        msg(anotherAnotherName);
+
+        int res = sum(2,3);
+        System.out.println("The sum is "+res
+        );
+    }
+
+    public static void msg(String name){
+        System.out.println("Hi, "+name+"!");
+    }
+
+    public static int sum(int a, int b){
+        return a + b;
     }
 }
